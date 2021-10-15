@@ -1,0 +1,28 @@
+@import '../../../variables';
+footer {
+  //width: 100%;
+  background: $blue-background-color;
+  // height: 50px;
+
+  .container {
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px 20px 0px;
+    div {
+      display: flex;
+
+      .footer-title {
+        color: $blue-color;
+        font-weight: 600;
+        font-style: oblique;
+      }
+      a {
+        align-self: center;
+        padding: 0px 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}

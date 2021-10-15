@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "variables";
+@import 'variables';
 * {
   margin: 0;
   padding: 0;
@@ -11,4 +11,5 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+  background: transparent;
 }
