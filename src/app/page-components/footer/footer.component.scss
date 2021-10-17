@@ -1,15 +1,12 @@
 @import '../../../variables';
 footer {
-  //width: 100%;
   background: $blue-background-color;
-  // height: 50px;
-
+  padding: 40px 100px 40px 100px;
   .container {
-    margin-left: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 70px 20px 0px;
+    //  padding: 20px 150px 20px 150px;
     div {
       display: flex;
 
@@ -18,10 +15,13 @@ footer {
         font-weight: 600;
         font-style: oblique;
       }
+
       a {
         align-self: center;
         padding: 0px 10px;
         text-decoration: none;
+        color: #000;
+        font-size: 20px;
       }
     }
   }
