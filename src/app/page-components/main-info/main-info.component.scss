@@ -9,12 +9,12 @@ section {
   .content {
     display: flex;
     flex-direction: column;
-    @media (min-width: $small) {
-      flex-direction: column;
-    }
     @media (min-width: $medium) {
       flex-direction: row-reverse;
     }
+    // @media (min-width: $large) {
+    //   flex-direction: row-reverse;
+    // }
 
     .graphics-info {
       div {
@@ -25,11 +25,19 @@ section {
         height: 500px;
 
         @media (min-width: $small) {
+          width: 100%;
           background-image: url('../../../assets/hero-img-tablet.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
           height: 500px;
         }
         @media (min-width: $medium) {
           width: 380px;
+          background-image: url('../../../assets/hero-img-desktop.png');
+        }
+        @media (min-width: $large) {
+          width: 400px;
           background-image: url('../../../assets/hero-img-desktop.png');
           background-position: right;
           background-repeat: no-repeat;
@@ -42,8 +50,9 @@ section {
     .main-info {
       padding-top: 25px;
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         @media (min-width: $medium) {
+          font-size: 2.2rem;
         }
         @media (min-width: $large) {
           font-size: 3.2rem;
