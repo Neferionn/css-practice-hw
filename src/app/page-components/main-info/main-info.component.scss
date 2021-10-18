@@ -29,7 +29,7 @@ section {
           height: 500px;
         }
         @media (min-width: $medium) {
-          width: 500px;
+          width: 380px;
           background-image: url('../../../assets/hero-img-desktop.png');
           background-position: right;
           background-repeat: no-repeat;
@@ -42,9 +42,11 @@ section {
     .main-info {
       padding-top: 25px;
       h1 {
-        font-size: 3.2rem;
-        @media (max-width: $medium) {
-          font-size: 2rem;
+        font-size: 2.5rem;
+        @media (min-width: $medium) {
+        }
+        @media (min-width: $large) {
+          font-size: 3.2rem;
         }
       }
       p {
@@ -60,9 +62,11 @@ section {
         padding-top: 15px;
         display: flex;
         flex-direction: column;
-        @media (min-width: $small) {
+
+        @media (min-width: $medium) {
           flex-direction: row;
         }
+
         .twitter-btn {
           display: flex;
           justify-content: center;
@@ -76,6 +80,9 @@ section {
           @media (min-width: $small) {
             flex-direction: row;
             padding: 15px 20px;
+          }
+          @media (min-width: $medium) {
+            font-size: 13px;
           }
           img {
             width: 20px;
@@ -98,6 +105,13 @@ section {
 
           &:first-child {
             margin-left: 0;
+          }
+          @media (min-width: $medium) {
+            width: 40px;
+          }
+          @media (min-width: $large) {
+            width: 60px;
+            margin-left: -30px;
           }
         }
       }
