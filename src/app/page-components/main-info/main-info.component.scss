@@ -55,13 +55,16 @@ section {
           font-size: 2.2rem;
         }
         @media (min-width: $large) {
-          font-size: 3.2rem;
+          font-size: 4rem;
         }
       }
       p {
         padding: 15px 0px;
         color: $grey-font-color;
         line-height: 1.5;
+        @media (min-width: $large) {
+          font-size: 1.3rem;
+        }
         span {
           color: #227a99;
           font-weight: bolder;
@@ -116,7 +119,7 @@ section {
             margin-left: 0;
           }
           @media (min-width: $medium) {
-            width: 40px;
+            width: 37px;
           }
           @media (min-width: $large) {
             width: 60px;
