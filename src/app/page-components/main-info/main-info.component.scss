@@ -1,1 +1,106 @@
 @import '../../../variables';
+
+section {
+  background: $light-beige-background-color;
+  padding: 0px 20px;
+  @media (min-width: $medium) {
+    padding: 20px 100px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $small) {
+      flex-direction: column;
+    }
+    @media (min-width: $medium) {
+      flex-direction: row-reverse;
+    }
+
+    .graphics-info {
+      div {
+        background-image: url('../../../assets/hero-img-desktop.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 500px;
+
+        @media (min-width: $small) {
+          background-image: url('../../../assets/hero-img-tablet.png');
+          height: 500px;
+        }
+        @media (min-width: $medium) {
+          width: 500px;
+          background-image: url('../../../assets/hero-img-desktop.png');
+          background-position: right;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 550px;
+        }
+      }
+    }
+
+    .main-info {
+      padding-top: 25px;
+      h1 {
+        font-size: 3.2rem;
+        @media (max-width: $medium) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        padding: 15px 0px;
+        color: $grey-font-color;
+        line-height: 1.5;
+        span {
+          color: #227a99;
+          font-weight: bolder;
+        }
+      }
+      .btns {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $small) {
+          flex-direction: row;
+        }
+        .twitter-btn {
+          display: flex;
+          justify-content: center;
+          color: white;
+          align-items: center;
+          background: $blue-color;
+          padding: 15px 20px;
+          font-size: 15px;
+          font-weight: bolder;
+          border-radius: 7px;
+          @media (min-width: $small) {
+            flex-direction: row;
+            padding: 15px 20px;
+          }
+          img {
+            width: 20px;
+            margin-right: 5px;
+          }
+        }
+        .arrow-btn {
+          color: #2f819f;
+          font-weight: bolder;
+          padding: 25px 15px;
+          @media (min-width: $small) {
+            padding: 15px 20px;
+          }
+        }
+      }
+      .pictures {
+        margin-top: 25px;
+        img {
+          margin-left: -20px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

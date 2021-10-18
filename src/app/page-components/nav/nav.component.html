@@ -1,7 +1,7 @@
 <section>
   <nav>
-    <a href="">Chirp.</a>
-    <div>
+    <a class="title" href="">Chirp.</a>
+    <div class="options">
       <a href="">Home</a>
       <a href="">Pricing</a>
       <a href="">FAQ</a>
@@ -10,5 +10,19 @@
         Sign in with Twitter
       </button>
     </div>
+
+    <div class="menu-btn">
+      <button (click)="toggle()">
+        <img
+          src="../../../assets/HamburgerMenu.svg"
+          alt=""
+        />
+      </button>
+    </div>
   </nav>
+  <div class="hidden-options" *ngIf="show">
+    <a href="">Home</a>
+    <a href="">Pricing</a>
+    <a href="">FAQ</a>
+  </div>
 </section>

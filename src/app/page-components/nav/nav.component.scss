@@ -1,16 +1,73 @@
 @import '../../../variables';
 
 section {
-  padding: 20px 15px;
+  background: $light-beige-background-color;
+  padding: 36px 20px;
+  @media (min-width: $medium) {
+    padding: 40px 100px;
+  }
+  //   @media (min-width: $large) {
+  //     padding: 40px 150px;
+  //   }
+
   nav {
     display: flex;
     justify-content: space-between;
-    div {
-      //   display: none;
+    align-items: center;
+
+    .title {
+      text-decoration: none;
+      color: $blue-color;
+      font-style: oblique;
+      font-size: x-large;
+    }
+    .options {
+      display: none;
+      @media (min-width: $medium) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          padding: 10px;
+          color: #656565;
+        }
+        .twitter-btn {
+          margin-left: 15px;
+          display: flex;
+          color: white;
+          align-items: center;
+          background: $blue-color;
+          padding: 15px 20px;
+          font-size: 15px;
+          border-radius: 7px;
+          img {
+            width: 20px;
+            margin-right: 5px;
+          }
+        }
+      }
     }
 
+    .menu-btn {
+      @media (min-width: $small) and (min-width: $medium) {
+        display: none;
+      }
+    }
+  }
+  .hidden-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+
     a {
-      text-decoration: none;
+      color: #656565;
+      padding: 10px 5px;
+      border-bottom: 2px solid #656565;
+    }
+    @media (min-width: $medium) {
+      display: none;
     }
   }
 }
