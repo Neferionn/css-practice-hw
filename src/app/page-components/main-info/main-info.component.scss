@@ -15,9 +15,6 @@ section {
     @media (min-width: 900px) {
       flex-direction: row-reverse;
     }
-    // @media (min-width: $large) {
-    //   flex-direction: row-reverse;
-    // }
 
     .graphics-info {
       div {
@@ -48,27 +45,34 @@ section {
 
     .main-info {
       padding-top: 25px;
+
       h1 {
         font-size: 2.2rem;
+
         @media (min-width: $medium) {
           font-size: 2.2rem;
         }
+
         @media (min-width: $large) {
           font-size: 4rem;
         }
       }
+
       p {
         padding: 15px 0px;
         color: $grey-font-color;
         line-height: 1.5;
+
         @media (min-width: $large) {
           font-size: 1.3rem;
         }
+
         span {
           color: #227a99;
           font-weight: bolder;
         }
       }
+
       .btns {
         padding-top: 15px;
         display: flex;
@@ -88,38 +92,47 @@ section {
           font-size: 15px;
           font-weight: bolder;
           border-radius: 7px;
+
           @media (min-width: $small) {
             flex-direction: row;
             padding: 15px 20px;
           }
+
           @media (min-width: $medium) {
             font-size: 13px;
           }
+
           img {
             width: 20px;
             margin-right: 5px;
           }
         }
+
         .arrow-btn {
           color: #2f819f;
           font-weight: bolder;
           padding: 25px 15px;
+
           @media (min-width: $small) {
             padding: 15px 20px;
           }
         }
       }
+
       .pictures {
         margin-top: 25px;
+
         img {
           margin-left: -20px;
 
           &:first-child {
             margin-left: 0;
           }
+
           @media (min-width: $medium) {
             width: 37px;
           }
+
           @media (min-width: $large) {
             width: 60px;
             margin-left: -30px;

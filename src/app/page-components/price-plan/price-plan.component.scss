@@ -1,15 +1,18 @@
 @import '../../../variables';
 section {
   padding: 50px 20px;
+
   @media (min-width: $medium) {
     padding: 60px 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
   @media (min-width: $large) {
     padding: 60px 150px;
   }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -25,6 +28,7 @@ section {
       h1 {
         font-size: 2rem;
       }
+
       p {
         padding: 5px;
         font-size: 1rem;
@@ -32,6 +36,7 @@ section {
         line-height: 1.5;
       }
     }
+
     .price-plan {
       margin-top: 30px;
       border: 1px solid #ffb335;
@@ -40,10 +45,12 @@ section {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .price {
         margin-top: 60px;
         display: flex;
         flex-direction: column;
+
         p {
           margin-top: -40px;
           font-size: 30px;
@@ -56,12 +63,15 @@ section {
           }
         }
       }
+
       hr {
         width: 80%;
         margin-top: 10px;
       }
+
       div {
         width: 80%;
+
         p {
           display: flex;
           text-align: left;
@@ -75,6 +85,7 @@ section {
           }
         }
       }
+
       .twitter-btn {
         width: 90%;
         display: flex;
@@ -87,6 +98,7 @@ section {
         text-align: center;
         border-radius: 7px;
         margin: 20px;
+
         img {
           width: 20px;
           margin-right: 5px;
