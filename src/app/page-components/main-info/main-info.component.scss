@@ -24,12 +24,9 @@ section {
         background-size: contain;
         height: 500px;
 
-        @media (min-width: $small) {
+        @media (min-width: $mobile) {
           width: 100%;
           background-image: url('../../../assets/hero-img-tablet.png');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
           height: 500px;
         }
         @media (min-width: $medium) {
@@ -40,8 +37,6 @@ section {
           width: 400px;
           background-image: url('../../../assets/hero-img-desktop.png');
           background-position: right;
-          background-repeat: no-repeat;
-          background-size: contain;
           height: 550px;
         }
       }
